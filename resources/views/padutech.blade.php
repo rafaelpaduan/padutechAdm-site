@@ -1,91 +1,150 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow" />    <title>MNMLSM Theme LinkFree</title>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Major Homer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
-
-<body>
-    <img id="userPhoto" src="https://i.imgur.com/ogrNhWB.jpg" alt="User Photo">
-
-    <a href="https://www.instagram.com/thesimpsons" id="userName">@thesimpsons</a>
-    <div id="links">
-        <a class="link" href="https://pt.wikipedia.org/wiki/Homer_Simpson" target="_blank" style="border-radius: 25px;">Wikipedia</a>
-        <a class="link" href="https://foxplay.com/br/forme" target="_blank" style="border-radius: 25px;">IMDB</a>
-        <a class="link" href="https://www.rottentomatoes.com/tv/the_simpsons" target="_blank" style="border-radius: 25px;">Rotten Tomatoes</a>
+    <body>
+        <div class="container">
+        <div class="content">
+            <img id="userPhoto" src="img/padutech_monitor.png" alt="User Photo">
+            <h1><a href="#" id="userName" rel="noopener"><b>Padutech Soluções</b></a></h1>
+            <small>Instalação e manutenção de Redes e Computadores</small>
+            <div id="links">
+                <a class="link" href="https://api.whatsapp.com/send?phone=5543999745305" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a class="link" href="https://www.facebook.com/padutech/"  rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
+                <a class="link" href="https://www.instagram.com/padubuntu/" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
+            </div>
+            <footer>
+                We like it minimal.
+            </footer>
+        </div>
     </div>
 
-    <!-- Javascript -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="index.js"></script>
-</body>
+
+    </body>
 
 </html>
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
-    --bgColor: rgb(0, 0, 0);
-    --accentColor: #E6E6E6;
-    --font: 'Karla', sans-serif;
+    --font: 'Roboto Mono', monospace;
+    --background: white;
+    --color: #232333;
 }
 
-body {
-    background-color: var(--bgColor);
-    background-image: url("./assets/deepSea.png");
-    background-size: 120%;
-}
-
-#userPhoto {
-    width: 110px;
-    height: 110px;
-    display: block;
-    margin: 35px auto 20px;
-    border-radius: 50%;
-}
-
-#userName {
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25;
-    display: block;
+body{
+    background-color: var(--background);
+    color: var(--color);
     font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+small {
+    margin-bottom: 10px;
+    color: #A6A6A6;
+}
+
+.container {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#userPhoto{
+    /* width: 96px; */
+    height: 96px;
+    display: block;
+    /* margin: 35px auto 20px; */
+    /* border-radius: 50%; */
+    /* border: solid var(--color) 2px; */
+}
+
+#userName{
     width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
+    line-height: 1.25;
+    display: block;
+    /* color: var(--color); */
+    color: #025373;
 }
 
-#links {
-    max-width: 675px;
+#links{
+    max-width: 90%;
     width: auto;
     display: block;
     margin: 27px auto;
 }
 
-.link {
+.link{
     display: block;
-    background-color: var(--accentColor);
-    color: var(--bgColor);
-    font-family: var(--font);
-    text-align: center;
     margin-bottom: 20px;
     padding: 17px;
-    text-decoration: none;
     font-size: 1rem;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    border: solid var(--accentColor) 2px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: dashed var(--color) 2px;
+    text-align: center;
+    text-decoration: none;  
+    color: var(--color);  
+    word-wrap: break-word;
+
 }
 
-.link:hover {
-    background-color: var(--bgColor);
-    color: var(--accentColor);
-}
+@media (prefers-color-scheme: dark) {
 
+    :root {        
+        --background: #202124;
+        --color: white;
+    }
+  }
 </style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83046392-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-83046392-1');
+</script>
