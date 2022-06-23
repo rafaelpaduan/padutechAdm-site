@@ -2,29 +2,33 @@
 <html lang="en">
 
     <head>
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="robots" content="noindex,nofollow" />    <title>Padutech Soluções</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
 
     <body>
-        <div class="container">
-        <div class="content">
-            <img id="userPhoto" src="{{ asset('img/padutech_monitor.png') }}" alt="User Photo">
-            <h1><a href="#" id="userName" rel="noopener"><b>Padutech Soluções</b></a></h1>
-            <small>Instalação e manutenção de Redes e Computadores</small>
-            <div id="links">
-                <a class="link" href="https://api.whatsapp.com/send?phone=5543999745305" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                <a class="link" href="https://www.facebook.com/padutech/"  rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
-                <a class="link" href="https://www.instagram.com/padubuntu/" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
+        <div id="app" class="container">
+            <div class="content">
+                <img id="userPhoto" src="{{ asset('img/padutech_monitor.png') }}" alt="User Photo">
+                <h1><a href="#" id="userName" rel="noopener"><b>Padutech Soluções</b></a></h1>
+                <small>Instalação e manutenção de Redes e Computadores</small>
+                <div id="links">
+                    <a class="link" href="https://api.whatsapp.com/send?phone=5543999745305" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                    <a class="link" href="https://www.facebook.com/padutech/"  rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a class="link" href="https://www.instagram.com/padubuntu/" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
+                </div>
+                <footer>
+                    We like it minimal.
+                </footer>
             </div>
-            <footer>
-                We like it minimal.
-            </footer>
         </div>
-    </div>
 
 
     </body>
