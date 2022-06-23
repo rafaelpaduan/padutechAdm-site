@@ -4,15 +4,15 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <meta name="robots" content="noindex,nofollow" />    <title>MNMLSM Theme LinkFree</title>
+        <meta name="robots" content="noindex,nofollow" />    <title>Padutech Soluções</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
     </head>
 
     <body>
         <div class="container">
         <div class="content">
-            <img id="userPhoto" src="img/padutech_monitor.png" alt="User Photo">
+            <img id="userPhoto" src="{{ asset('img/padutech_monitor.png') }}" alt="User Photo">
             <h1><a href="#" id="userName" rel="noopener"><b>Padutech Soluções</b></a></h1>
             <small>Instalação e manutenção de Redes e Computadores</small>
             <div id="links">

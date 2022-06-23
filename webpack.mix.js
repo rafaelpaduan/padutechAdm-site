@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css')
     
-    .copy('resources/img/padutech_monitor.png', 'public/img');
+    .copy('resources/img/padutech_monitor.png', 'public/img')
+    .copy('resources/img/favicon.ico', 'public/img');
