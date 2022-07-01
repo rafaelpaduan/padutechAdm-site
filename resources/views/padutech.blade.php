@@ -7,7 +7,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-        <meta name="robots" content="noindex,nofollow" />    <title>Padutech Soluções</title>
+        <title>Padutech Soluções</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
         <script src="{{ asset('js/app.js') }}" defer></script>
