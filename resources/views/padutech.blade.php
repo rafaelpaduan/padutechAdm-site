@@ -20,9 +20,9 @@
                 <h1><a href="#" id="userName" rel="noopener"><b>Padutech Soluções</b></a></h1>
                 <small>Instalação e manutenção de Redes e Computadores</small>
                 <div id="links">
-                    <a class="link" href="https://api.whatsapp.com/send?phone=5543999745305" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                    <a class="link" href="https://api.whatsapp.com/send?phone=5543999385043" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
                     <a class="link" href="https://www.facebook.com/padutech/"  rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
-                    <a class="link" href="https://www.instagram.com/padubuntu/" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a class="link" href="https://www.instagram.com/padutechsolucoes/" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
                 </div>
                 <footer>
                     We like it minimal.
@@ -44,7 +44,7 @@
 }
 
 body{
-    background-color: var(--background);
+    background-color: #fff;
     color: var(--color);
     font-family: var(--font);
     margin: 0;
@@ -127,10 +127,10 @@ footer{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    border: dashed var(--color) 2px;
+    border: dashed #000 2px;
     text-align: center;
     text-decoration: none;  
-    color: var(--color);  
+    color: #000;  
     word-wrap: break-word;
 
 }
