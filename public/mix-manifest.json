@@ -1,6 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/tabler.js": "/js/tabler.js",
     "/css/app.css": "/css/app.css",
-    "/img/padutech_monitor.png": "/img/padutech_monitor.png",
-    "/img/favicon.ico": "/img/favicon.ico"
+    "/css/tabler.css": "/css/tabler.css"
 }

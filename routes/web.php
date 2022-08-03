@@ -22,8 +22,12 @@ if (app()->environment('prod') && !empty($app_url)) {
 }
 
 Route::get('/', function () {
-    return view('padutech');
+    return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

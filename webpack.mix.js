@@ -11,9 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix
     .vue()
+    .js('resources/js/app.js', 'public/js')
+    .js('node_modules/@tabler/core/src/js/tabler.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    
-    .copy('resources/img/padutech_monitor.png', 'public/img')
-    .copy('resources/img/favicon.ico', 'public/img');
+    .sass('node_modules/@tabler/core/src/scss/tabler.scss', 'public/css');
